@@ -1,11 +1,21 @@
-# project-catalog
+<p align="center">
+  <img src="https://img.shields.io/npm/v/kandar-project-catalog?color=blue&logo=npm&label=kandar-project-catalog" alt="npm version">
+  <img src="https://img.shields.io/npm/dm/kandar-project-catalog?color=blue&logo=npm" alt="npm downloads">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License">
+  <img src="https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg" alt="Node.js">
+</p>
 
-Scan any directory, detect tech stacks automatically, and generate a beautiful interactive HTML dashboard + Markdown catalog of all your projects.
+<h1 align="center">project-catalog</h1>
+<p align="center">
+  Scan any directory, detect tech stacks automatically, and generate a beautiful interactive HTML dashboard + Markdown catalog of all your projects.
+</p>
+
+---
 
 ## Quick Start
 
 ```bash
-npx project-catalog scan .
+npx kandar-project-catalog scan .
 ```
 
 This will scan the current directory, detect all projects and their tech stacks, and generate:
@@ -15,7 +25,7 @@ This will scan the current directory, detect all projects and their tech stacks,
 ## Install Globally
 
 ```bash
-npm install -g project-catalog
+npm install -g kandar-project-catalog
 project-catalog scan ./my-projects
 ```
 
@@ -49,14 +59,40 @@ project-catalog scan ./my-projects
 
 ```bash
 # Scan a folder
-npx project-catalog scan ~/Desktop/projects
+npx kandar-project-catalog scan ~/Desktop/projects
 
 # Output:
-# ✓ Scanned 42 projects across 8 categories
-# → PROJECTS-CATALOG.md
-# → projects-dashboard.html
+#   Scanning: /Users/you/Desktop/projects
+#   Found 42 projects across 8 categories
+#   Detected 15 technologies
+#   -> /Users/you/Desktop/projects/PROJECTS-CATALOG.md
+#   -> /Users/you/Desktop/projects/projects-dashboard.html
 ```
+
+## Tech Stack Detection
+
+| Config File | Detected Stack |
+|-------------|----------------|
+| `package.json` | Node.js, React, Next.js, Vue, Express, NestJS, etc. |
+| `requirements.txt` | Python, Django, Flask, FastAPI, etc. |
+| `composer.json` | PHP, Laravel, CodeIgniter, Livewire, etc. |
+| `pubspec.yaml` | Flutter, Dart |
+| `build.gradle` | Java, Kotlin |
+| `Dockerfile` | Docker |
+| `go.mod` | Go |
+| `Cargo.toml` | Rust |
+| `Gemfile` | Ruby |
+| `tsconfig.json` | TypeScript |
+| `vite.config.*` | Vite |
+| `tailwind.config.*` | Tailwind CSS |
+| `prisma/schema.prisma` | Prisma |
 
 ## License
 
 MIT
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/kandarlubis31">Kandar Lubis</a>
+</p>
