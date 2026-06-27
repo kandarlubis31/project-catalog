@@ -1,0 +1,37 @@
+{
+  "name": "kandar-project-catalog",
+  "version": "1.0.1",
+  "description": "Scan directories, detect tech stacks, and generate beautiful project catalogs with interactive dashboards",
+  "main": "src/index.js",
+  "bin": {
+    "project-catalog": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node bin/cli.js scan ."
+  },
+  "keywords": [
+    "project",
+    "catalog",
+    "scanner",
+    "dashboard",
+    "tech-stack",
+    "developer-tools",
+    "portfolio"
+  ],
+  "author": "Kandar Lubis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kandarlubis31/project-catalog.git"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
