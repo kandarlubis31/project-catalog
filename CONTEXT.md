@@ -1,15 +1,15 @@
-# project-catalog
+# project-catalog — Project Context
 
-## Tentang Project
-
+## Ringkasan
 project-catalog Scan any directory, detect tech stacks automatically, and generate a beautiful interactive HTML dashboard + Markdown catalog of all your projects. This will scan the current directory, detect all projects and their tech stacks
 
-## Tech Stack
+> *Context ini dibuat otomatis oleh `catalog/generate_contexts.py`. Isi ulang
+> bagian ringkasan / arsitektur secara manual jika butuh detail lebih dalam.*
 
+## Tech Stack
 Node.js
 
 ## Struktur Utama
-
 ```
 bin/
 src/
@@ -20,15 +20,10 @@ package.json
 README.md
 ```
 
-## Menjalankan
-
+## Cara Menjalankan
 - `npm run start`
 - `npm run test`
 
 ---
 
 *Generated: 2026-08-08 · Path: nodeJS\project-catalog*
-
----
-
-Lihat `CONTEXT.md` di folder ini untuk detail arsitektur.
